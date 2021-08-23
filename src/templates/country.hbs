@@ -1,3 +1,18 @@
-<div>
-  
+<div class="wrapper">
+<h1 class="country-title">{{name}}</h1>
+<div class="country-wrapper">
+  <div class="country-box">
+    <p><span class="country-text">Capital:</span> {{capital}}</p>
+    <p><span class="country-text">Population:</span> {{population}}</p>
+    <p><span class="country-text">Languages:</span> </p>
+    <ul>
+      {{#each languages}}
+      <li>{{name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="country-box">
+    <img src="{{this.flag}}" alt="{{this.name}}" style="width: 80%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+  </div>
+</div>
 </div>
